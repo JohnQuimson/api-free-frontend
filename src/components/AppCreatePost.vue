@@ -42,6 +42,7 @@ export default {
           this.newPostData
         );
         console.log('Post creato con successo:', response.data);
+        this.$router.push({ name: 'posts' });
       } catch (error) {
         console.error('Errore creazione post:', error);
         this.errorMessage = 'Errore nella creazione del post.';

@@ -26,6 +26,11 @@ export default {
     <p class="description">
       {{ post.content }}
     </p>
+    <ul>
+      <li v-for="tag in tags">
+        {{ post.tag }}
+      </li>
+    </ul>
   </div>
 </template>
 
