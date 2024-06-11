@@ -1,12 +1,10 @@
 <h1 align="center">
-  <br>
-    <img src="./public/img/my-logo.png" alt="my-logo" width="200">
-  <br>
- TITLE
-  <br>
+  
+ api-free-frontend
+  
 </h1>
 
-<h4 align="center">summary <a href="http://electron.atom.io" target="_blank">"link"</a>.</h4>
+<!-- <h4 align="center">summary <a href="http://electron.atom.io" target="_blank">"link"</a>.</h4> -->
 
 <!-- <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -25,29 +23,26 @@
 <p align="center">
   <a href="#description">Description</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#used-technologies">Used technologies</a> •
+  <a href="#used-technologies">Used technologies</a> 
 </p>
 
 ![screenshot](https://raw.githubusercontent.com/gist/mahmudinm/47588cab5af928d2c8a2976d90216ea7/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif)
 
 ## Description
 
-- Per importare Bootstrap
-  - npm i --save bootstrap @popperjs/core  (anche la libreria @popperjs, per la parte di js)
-  - nel file style.scss -> @import 'bootstrap/scss/bootstrap';
-  - nel file main.js -> import * as bootstrap from "bootstrap";
-- per usare router-link
-  - npm install vue-router@4
-  - creare file router.js e indicare le rotte
-  - in App.vue indicare dove si vuole usare la router link, mettendo nel template -> router-view
-- line 3
-- line 4
-- line 5
-- line 6
-- line 7
-- line 8
-- line 9
-- line 10
+Oggi abbiamo un esercizio un po' diverso in serbo per voi!
+
+Dovete sviluppare un'applicazione frontend per consumare le API del blog che abbiamo creato nei giorni scorsi.
+
+La tecnologia da utilizzare? La scelta è vostra! Potete optare per Vue.js o HTML e JavaScript plain. Anche per quanto riguarda lo stile, usate ciò che preferite: CSS, SCSS, Bootstrap, Tailwind, ecc...
+
+Il nostro unico suggerimento è: sperimentate, sperimentate e sperimentate!
+
+Alla fine di questa giornata, speriamo di vedere almeno:
+
+- Una pagina home con l'elenco di tutti i post
+- Una pagina per creare un nuovo post
+  Ricordatevi di disabilitare il middleware di autenticazione :occhiolino:
 
 ## How To Use
 
@@ -71,11 +66,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 This software uses the following technologies:
 
-- [Node.js](https://nodejs.org/)
-- [Sass](https://sass-lang.com/)
-- [Vue](https://vuejs.org/)
-- [ViteJs](https://vitejs.dev/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Node.js](https://)
+- [Express](https://)
 
 > GitHub [@JohnQuimson](https://github.com/JohnQuimson) &nbsp;&middot;&nbsp;
 > Twitter [@John Henric Quimson](https://www.linkedin.com/in/john-henric-quimson-973827280/)
