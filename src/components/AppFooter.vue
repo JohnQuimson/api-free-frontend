@@ -8,8 +8,15 @@ export default {
 };
 </script>
 
-<template>footer</template>
+<template>
+  <footer>footer</footer>
+</template>
 
 <style lang="scss">
 @import '../assets/scss/partials/variables.scss';
+
+footer {
+  height: 10vh;
+  border: 1px solid forestgreen;
+}
 </style>
