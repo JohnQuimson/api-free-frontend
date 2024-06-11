@@ -13,7 +13,7 @@ export default {
   <main class="main d-flex justify-content-center">
     <router-link
       :to="{ name: 'posts' }"
-      class="btn btn-success mt-5 py-3 px-4"
+      class="custom-btn mt-5 py-3 px-4"
       style="align-self: flex-start"
       >posts</router-link
     >

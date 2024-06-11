@@ -1,0 +1,12 @@
+.custom-btn {
+  background-color: var(--custom-contrast);
+  border-radius: 20px;
+  color: var(--custom-white);
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: #ec8a7d;
+  }
+}

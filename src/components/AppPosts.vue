@@ -37,15 +37,13 @@ export default {
 <template>
   <section id="posts" class="pb-5">
     <div class="d-flex justify-content-between align-items-center px-5 py-5">
-      <router-link
-        :to="{ name: 'home' }"
-        class="btn btn-secondary align-self-center"
+      <router-link :to="{ name: 'home' }" class="back-btn align-self-center"
         ><i class="fa-solid fa-arrow-left-long"></i
       ></router-link>
       <h1>Posts</h1>
       <router-link
         :to="{ name: 'create-post' }"
-        class="btn btn-primary align-self-center"
+        class="add-btn align-self-center"
       >
         <i class="fa-solid fa-plus"></i
       ></router-link>
@@ -83,6 +81,23 @@ export default {
 
   h1 {
     color: var(--custom-white);
+  }
+
+  .back-btn {
+    color: var(--custom-light);
+    font-size: 30px;
+  }
+
+  .add-btn {
+    background-color: var(--custom-contrast);
+    color: var(--custom-white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ec8a7d;
+    }
   }
 }
 </style>
