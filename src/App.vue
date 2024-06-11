@@ -1,32 +1,27 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
+import AppHome from './components/AppHome.vue';
 import AppFooter from './components/AppFooter.vue';
-import { store } from './store.js';
 
 export default {
   name: 'App',
 
   components: {
     AppHeader,
-    AppMain,
+    AppHome,
     AppFooter,
   },
 
   data() {
-    return {
-      store,
-    };
+    return {};
   },
 };
 </script>
 
 <template>
   <AppHeader />
-  <AppMain />
+  <router-view></router-view>
   <AppFooter />
 </template>
 
-<style lang="scss">
-@use './assets/scss/style.scss' as *;
-</style>
+<style lang="scss"></style>

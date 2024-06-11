@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Footer',
+  name: 'Posts',
   data() {
     return {};
   },
@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<template>footer</template>
+<template>posts</template>
 
 <style lang="scss">
 @import '../assets/scss/partials/variables.scss';

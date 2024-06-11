@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <p>Funziona tutto !</p>
+  <p>Header</p>
 </template>
 
 <style scoped lang="scss">
