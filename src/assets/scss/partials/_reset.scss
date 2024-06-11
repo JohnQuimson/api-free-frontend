@@ -1,0 +1,48 @@
+/* 
+---------------------
+CUSTOM SCROLL-BAR
+---------------------
+*/
+
+/* Larghezza della scroll bar verticale */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; /* Aggiungi l'altezza per la scroll bar orizzontale */
+}
+
+/* Percorso (in questo caso nascosto) */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Stile scroll-bar */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(110, 110, 110, 0.8);
+  border-radius: 20px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Scroll bar orizzontale */
+::-webkit-scrollbar-horizontal {
+  height: 5px;
+}
+
+/* Track della scroll bar orizzontale */
+::-webkit-scrollbar-track-horizontal {
+  background: none;
+}
+
+/* Thumb della scroll bar orizzontale */
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: rgba(110, 110, 110, 0.8);
+  border-radius: 20px;
+}
+
+/* Hover per la scroll bar orizzontale */
+::-webkit-scrollbar-thumb-horizontal:hover {
+  background: #888;
+}

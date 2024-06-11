@@ -22,15 +22,15 @@ export default {
       />
     </div> -->
 
-    <h2>{{ post.title }}</h2>
+    <h3>{{ post.title }}</h3>
     <p class="description">
       {{ post.content }}
     </p>
-    <ul>
+    <!-- <ul>
       <li v-for="tag in tags">
         {{ post.tag }}
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 

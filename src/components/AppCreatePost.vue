@@ -56,7 +56,16 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="d-flex justify-content-between align-items-center px-5 mt-3 mb-5">
+    <router-link
+      :to="{ name: 'posts' }"
+      class="btn btn-secondary align-self-center"
+      ><i class="fa-solid fa-arrow-left-long"></i
+    ></router-link>
+    <h1>Crea post</h1>
+    <div></div>
+  </div>
+  <div class="container my-5">
     <form @submit.prevent="createPost">
       <!-- title -->
       <div class="mb-3">
@@ -125,13 +134,30 @@ export default {
             />
             <label class="form-check-label" for="published"> Pubblica </label>
           </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckIndeterminateDisabled"
+              disabled
+            />
+            <label
+              class="form-check-label"
+              for="flexCheckIndeterminateDisabled"
+            >
+              Privata
+            </label>
+          </div>
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Crea Post</button>
+      <button type="submit" class="btn btn-primary">Crea</button>
       <p class="text-danger">{{ errorMessage }}</p>
     </form>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/style.scss' as *;
+</style>
