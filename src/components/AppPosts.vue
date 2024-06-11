@@ -35,7 +35,23 @@ export default {
 </script>
 
 <template>
-  <section id="posts" class="pb-5">
+  <!-- no posts  -->
+  <section
+    v-if="posts.length === 0"
+    id="no-posts"
+    class="d-flex align-items-center flex-column"
+  >
+    <h2 class="mt-5">Non è presente alcun POST</h2>
+    <div class="add-cont d-flex flex-column align-items-center">
+      <p>Aggiungine qualcuno</p>
+      <router-link :to="{ name: 'create-post' }" class="add-btn">
+        <i class="fa-solid fa-plus"></i
+      ></router-link>
+    </div>
+  </section>
+
+  <!-- if posts.lenght > 0  -->
+  <section v-else id="posts" class="pb-5">
     <div class="d-flex justify-content-between align-items-center px-5 py-5">
       <router-link :to="{ name: 'home' }" class="back-btn align-self-center"
         ><i class="fa-solid fa-arrow-left-long"></i
@@ -75,6 +91,33 @@ export default {
 
 <style lang="scss">
 @use '../assets/scss/style.scss' as *;
+
+#no-posts {
+  height: 75vh;
+  background-color: var(--custom-primary);
+
+  h2 {
+    color: var(--custom-white);
+  }
+
+  .add-cont {
+    p {
+      color: var(--custom-light);
+    }
+
+    .add-btn {
+      background-color: var(--custom-contrast);
+      color: var(--custom-white);
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #ec8a7d;
+      }
+    }
+  }
+}
 
 #posts {
   background-color: var(--custom-primary);
