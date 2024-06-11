@@ -35,7 +35,7 @@ export default {
 
 header {
   height: 15vh;
-  border: 1px solid red;
+  background-color: var(--custom-primary);
   .custom-container {
     margin: 0 auto;
     color: #f5f5f5;

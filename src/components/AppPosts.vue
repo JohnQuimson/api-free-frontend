@@ -35,10 +35,8 @@ export default {
 </script>
 
 <template>
-  <div>
-    <div
-      class="d-flex justify-content-between align-items-center px-5 mt-3 mb-5"
-    >
+  <section id="posts" class="pb-5">
+    <div class="d-flex justify-content-between align-items-center px-5 py-5">
       <router-link
         :to="{ name: 'home' }"
         class="btn btn-secondary align-self-center"
@@ -66,7 +64,7 @@ export default {
         <AppCard :post="post" />
       </li>
     </ul> -->
-    <div class="row container border mx-auto g-3">
+    <div class="row container mx-auto g-3">
       <div
         v-for="post in posts"
         class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
@@ -74,9 +72,17 @@ export default {
         <AppCard :post="post" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
-/* Stili specifici per questo componente */
+@use '../assets/scss/style.scss' as *;
+
+#posts {
+  background-color: var(--custom-primary);
+
+  h1 {
+    color: var(--custom-white);
+  }
+}
 </style>

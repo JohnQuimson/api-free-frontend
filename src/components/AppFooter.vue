@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <footer>footer</footer>
+  <footer class="d-flex justify-content-center align-items-center"></footer>
 </template>
 
 <style lang="scss">
@@ -17,6 +17,6 @@ export default {
 
 footer {
   height: 10vh;
-  border: 1px solid forestgreen;
+  background-color: var(--custom-primary);
 }
 </style>

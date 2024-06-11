@@ -22,7 +22,7 @@ export default {
       />
     </div> -->
 
-    <h3>{{ post.title }}</h3>
+    <h3 class="pt-3">{{ post.title }}</h3>
     <p class="description">
       {{ post.content }}
     </p>
@@ -36,26 +36,20 @@ export default {
 
 <style lang="scss">
 .custom-card {
-  border: 1px solid red;
+  background-color: var(--custom-secondary);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   width: 90%;
   padding: 1rem;
-  .tokenImage {
-    border-radius: 0.5rem;
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
+
+  h3 {
+    color: var(--custom-white);
   }
+
   .description {
     margin: 0.5rem 0;
-    color: #a89ec9;
-  }
-  .tokenInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: var(--custom-tertiary);
   }
 }
 </style>
