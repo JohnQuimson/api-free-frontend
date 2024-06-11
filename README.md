@@ -42,7 +42,7 @@ Alla fine di questa giornata, speriamo di vedere almeno:
 
 - Una pagina home con l'elenco di tutti i post
 - Una pagina per creare un nuovo post
-  Ricordatevi di disabilitare il middleware di autenticazione :occhiolino:
+  Ricordatevi di disabilitare il middleware di autenticazione
 
 ## How To Use
 
